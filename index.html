@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>סוכן התרופות של מכבי | MOH Pharma</title>
+  <meta name="description" content="סוכן התרופות החכם של מכבי שירותי בריאות — מענה מיידי לשאלות על תרופות, מרשמים ומידע רפואי." />
+  <link rel="icon" type="image/svg+xml" href="assets/maccabi-logo.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- ===== Utility bar ===== -->
+  <div class="utility-bar">
+    <div class="container utility-inner">
+      <div class="utility-langs">
+        <a href="#" class="active">עברית</a>
+        <a href="#">English</a>
+        <a href="#">العربية</a>
+        <a href="#">Русский</a>
+      </div>
+      <div class="utility-links">
+        <a href="#" class="login-link">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10Zm0 2c-5 0-9 2.5-9 6v1h18v-1c0-3.5-4-6-9-6Z" fill="currentColor"/></svg>
+          כניסה לחשבון
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== Header ===== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#" aria-label="מכבי שירותי בריאות — דף הבית">
+        <img src="assets/maccabi-logo.svg" alt="מכבי שירותי בריאות" />
+      </a>
+
+      <nav class="main-nav" aria-label="ניווט ראשי">
+        <a href="#">מדריך הבריאות</a>
+        <a href="#">מכבי שלי</a>
+        <a href="#">ביטוחים והטבות</a>
+        <a href="#">איתור שירות</a>
+        <a href="#" class="nav-active">תרופות</a>
+        <a href="#">צור קשר</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-btn" aria-label="חיפוש">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/><path d="m20 20-3-3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </button>
+        <a href="#" class="join-btn">הצטרפו למכבי</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== Hero / page title ===== -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <span class="hero-eyebrow">שירות דיגיטלי · 24/7</span>
+      <h1>סוכן התרופות של מכבי</h1>
+      <p class="hero-sub">קבלו מענה מיידי לשאלות על תרופות, מרשמים, מינונים ומידע רפואי — בשיחה פשוטה עם הסוכן החכם של מכבי.</p>
+    </div>
+  </section>
+
+  <!-- ===== Chat agent ===== -->
+  <main class="chat-section">
+    <div class="container">
+      <div class="chat-frame" id="moh-chat-frame">
+        <div class="chat-loading" id="moh-chat-loading">
+          <span class="spinner" aria-hidden="true"></span>
+          טוען את הסוכן…
+        </div>
+      </div>
+      <p class="chat-disclaimer">
+        המידע הניתן על ידי הסוכן הוא כללי ואינו מהווה תחליף לייעוץ רפואי. במקרה חירום חייגו 101 או פנו למוקד מכבי.
+      </p>
+    </div>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <h3>שירותים מקוונים</h3>
+        <a href="#">זימון תור</a>
+        <a href="#">תוצאות בדיקות</a>
+        <a href="#">מרשמים וחידוש תרופות</a>
+        <a href="#">תשלומים</a>
+      </div>
+      <div class="footer-col">
+        <h3>איתור שירות</h3>
+        <a href="#">רופאים</a>
+        <a href="#">מרפאות</a>
+        <a href="#">בתי מרקחת</a>
+        <a href="#">מוקדים</a>
+      </div>
+      <div class="footer-col">
+        <h3>מידע רפואי</h3>
+        <a href="#">תרופות</a>
+        <a href="#">חיסונים</a>
+        <a href="#">מצבים רפואיים</a>
+        <a href="#">מדריך הבריאות</a>
+      </div>
+      <div class="footer-col">
+        <h3>מכבי</h3>
+        <a href="#">אודות</a>
+        <a href="#">דרושים</a>
+        <a href="#">הצהרת נגישות</a>
+        <a href="#">תנאי שימוש ופרטיות</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <img src="assets/maccabi-logo.svg" alt="מכבי" class="footer-logo" />
+        <span>© מכבי שירותי בריאות. כל הזכויות שמורות.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== Wonderful Chat embed (rendered open & inline) ===== -->
+  <script>
+    (() => {
+      const s = document.createElement('script');
+      s.src = 'https://maccabi-builder.app.sb.wonderful.ai/embed/wonderful-chat.js';
+      s.onload = () => {
+        const chat = new window.WonderfulChat({
+          environment: "maccabi-builder.api.sb.wonderful.ai",
+          agentId: "bafe0e40-69f5-451b-a2a5-bf2a402ea4d3",
+
+          // Core settings
+          agentName: 'MOH_Pharma',
+          buttonText: 'דברו איתנו',
+          placeholderText: 'מוזמנים לכתוב כאן...',
+          isRTL: true,
+
+          // Main theme colors
+          primaryColor: '#0066cc',
+          accentColor: '#004d99',
+          textColor: '#333333',
+
+          // Chat appearance
+          headerBgColor: '#0066cc',
+          headerTextColor: '#ffffff',
+
+          // Message bubbles
+          userBubbleColor: '#0066cc',
+          userTextColor: '#ffffff',
+          agentBubbleColor: '#ffffff',
+          agentTextColor: '#333333',
+
+          // Background colors
+          windowBgColor: '#ffffff',
+          messagesBgColor: '#f5f7fb',
+          inputBgColor: '#f5f7fb',
+
+          // Status indicators
+          statusColor: '#4CAF50',
+          errorColor: '#F44336',
+
+          logoUrl: 'assets/maccabi-logo.svg'
+        });
+
+        // --- Render the chat OPEN and embedded inside the page (like Claude/ChatGPT) ---
+        try {
+          const frame = document.getElementById('moh-chat-frame');
+          const win = chat && chat.ui && chat.ui.chatWindow;
+          if (frame && win) {
+            const loading = document.getElementById('moh-chat-loading');
+            if (loading) loading.remove();
+            // mark for CSS overrides and dock into our centered container
+            win.classList.add('moh-embedded');
+            frame.appendChild(win);
+            // open & connect immediately (openChat, not toggleChat, so it can't be closed)
+            chat.openChat();
+          }
+        } catch (e) {
+          console.error('Failed to embed chat inline:', e);
+        }
+      };
+      document.head.appendChild(s);
+    })();
+  </script>
+</body>
+</html>
